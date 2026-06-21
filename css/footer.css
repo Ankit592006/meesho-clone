@@ -1,0 +1,100 @@
+/* Footer styles */
+
+.footer{
+    padding: 40px 64px 40px 64px;
+    background-color: rgb(248, 248, 255);
+}
+.footer-section{
+    width: 100%;
+    display: flex;
+}
+.section-1{
+   padding-right: 12px;
+}
+.section-1 h2{
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.section-1 p{
+    color: rgb(97, 97, 115);
+    font-size: 18px;
+    word-spacing: 2px;
+    font-weight: 500;
+    gap: 20px;
+}
+.download{
+    display: flex;
+    gap: 16px;
+}
+.download img{
+    height: 50px;
+    width: 190px;
+    background: transparent;
+    margin: 20px 0px 20px 0px;
+}
+.section-2{
+    width: 15%;
+    padding-top: 13px;
+    margin: 0px 0px 40px;
+
+}
+.section-2 a{
+    text-decoration: none;
+    color: rgb(97, 97, 115);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.sec{
+    padding-bottom: 12px;
+}
+.section-3{
+    width: 15%;
+    padding-top: 13px;
+
+}
+.section-3 a{
+    text-decoration: none;
+    color: rgb(97, 97, 115);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.section-3 a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.section-4{
+    padding-top: 10px;
+    width: 15%;
+}
+.section-4 h6{
+    color: rgb(53, 53, 67);
+    font-weight: 700;
+    font-size: 20px;
+}
+.section-4 img{
+    padding: 16px 16px 0px 0px ;
+    height: 24px;
+    width:  24px;
+}
+.section-2 a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.section-5{
+    width: 25%;
+    padding-top: 10px;
+    font-size: 12px;
+    color: rgb(97, 97, 115);
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.section-5 h6{
+    color: rgb(53, 53, 67);
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 15px;
+}

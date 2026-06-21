@@ -1,0 +1,47 @@
+/* Hero section styles */
+
+.img-banner {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    color: transparent;
+    padding-top: 120px ;
+}
+
+.img-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+    position: absolute;
+    left: 63%;
+    top: 30%;
+    font-size: 44px;
+    line-height: 52px;
+    letter-spacing: -0.72px;
+    /* transform: translateY(-50%); */
+
+}
+
+.img-text {
+    font-style: normal;
+    letter-spacing: -0.88px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+.shop-now {
+    padding: 11px 41px 13px;
+    font-size: 28px;
+    border-radius: 8px;
+    background: rgb(249, 249, 249);
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0, 15)0px 1px 1px 0px;
+    color: rgb(88, 10, 70);
+}

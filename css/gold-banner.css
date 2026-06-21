@@ -1,0 +1,41 @@
+/* Gold banner styles */
+
+
+
+
+.gold img {
+    width: 100%;
+}
+
+.shop-now-gold {
+    border: 1px solid rgb(255, 209, 130);
+    background: rgb(63, 31, 17);
+    color: rgb(255, 209, 130);
+    padding: 11px 25px 13px;
+    border-radius: 8px;
+    font-size: 20px;
+    position: absolute;
+    bottom: -85%;
+    left: 12%;
+    cursor: pointer;
+}
+.gold-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 60px;
+    position: absolute;
+    width: 21%;
+    top: 155%;
+    transform: translateY(-50%);
+    left: 66.66%;
+
+}
+.gold-img img{
+    height: 199.51px;
+    width: 160px;
+    cursor: pointer;
+}
+.gold-img img:hover{
+     transform: translateY(-4px);
+    transition: transform 0.2s;
+}

@@ -1,0 +1,23 @@
+/* Category section styles */
+.collection {
+    padding: 40px 64px;
+    max-width: 100%;
+    display: flex;
+    gap: 24px;
+}
+
+.collection-item a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+
+}
+
+.collection-item p {
+    padding: 16px 0px 0px;
+}
+
+.collection-item:hover {
+    transform: translateY(-4px);
+    transition: transform 0.2s;
+}

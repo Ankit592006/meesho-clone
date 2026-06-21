@@ -1,0 +1,53 @@
+/* Trendz section styles */
+
+
+.trendz img{
+    width: 100%;
+}
+.shopnow-trendz{
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    color: rgb(88, 10, 70);
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    position: absolute;
+    bottom: -222%;
+    left: 4%;
+    padding: 12px 40px;
+}
+.shopnow-trendz:hover{
+    transform: translateY(-4px);
+}
+.trendz-collection{
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    left: 38%;
+    transform: translateY(-380px);
+}
+.trendz-collection p{
+    padding: 4px 0px 6px;
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    color: rgb(88, 10, 70);
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid rgb(255, 157, 0);
+    background: rgb(255, 245, 229);
+    font-weight: 600;
+    margin-top: 10px;
+    
+}
+.trendz-collection a{
+    text-decoration: none;
+}
+.trendz-collection a:hover{
+    transform: translateY(-5px);
+    transition: 0.2s;
+}

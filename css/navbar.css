@@ -1,0 +1,135 @@
+/* Navbar styles */
+/* ===========================================
+                NAVBAR
+=========================================== */
+
+.full-nav{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background:white;
+    top: 0px;
+
+}
+ 
+
+.outer {
+    height: 72px;
+    padding-left: 64px;
+    padding-right: 64px;
+    display: flex;
+    max-width: 100%;
+    
+}
+
+.logo-title img {
+    height: 36px;
+    width: 156px;
+
+}
+
+.logo-title {
+    display: flex;
+    align-self: center;
+    margin-right: 15px;
+}
+
+.search-title input {
+    width: 570px;
+    height: 45.2px;
+    padding-left: 30px;
+    border: 1px solid rgb(206, 206, 222);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.search-title {
+    display: flex;
+    align-items: center;
+}
+
+.search-title i {
+    transform: translateX(30px);
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+.icons p {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.line {
+    height: 40px;
+    width: 2px;
+    background-color: #cecede;
+}
+
+.user {
+    margin-left: px;
+}
+
+.user i {
+    display: flex;
+    justify-content: center;
+
+}
+
+.mid-line {
+    background-color: rgb(206, 206, 222);
+    height: 1px;
+    width: 100%;
+}
+
+.box {
+    max-width: 100%;
+    padding: 0 64px;
+}
+
+.nav-down {
+    max-width: 100%;
+    height: 52px;
+    padding: 0;
+    background-color: white;
+    overflow-x: auto;
+    scrollbar-width: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+
+}
+
+.nav-list {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 2px 2px 0px 0px;
+    padding: 0px 8px;
+    white-space: nowrap;
+
+}
+
+.nav-list p {
+    font-size: 1rem;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+    color: rgb(53, 53, 67);
+}
+
+.nav-list p:hover {
+    color: rgb(159, 32, 137);
+    border-bottom: 3px solid rgb(159, 32, 137);
+    cursor: pointer;
+}
