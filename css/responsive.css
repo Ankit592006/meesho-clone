@@ -1,1 +1,262 @@
 /* Responsive styles */
+/* =====================================================
+                RESPONSIVE CSS
+        Meesho Clone - Desktop First
+===================================================== */
+
+
+/* ===========================
+   Large Desktop (1600px)
+=========================== */
+
+@media (max-width:1600px){
+
+    .products-section{
+        max-width:1400px;
+    }
+
+}
+
+
+
+/* ===========================
+   Laptop (1400px)
+=========================== */
+
+@media (max-width:1400px){
+
+    .header-container,
+    .products-section,
+    .hero-section,
+    .footer-container{
+
+        width:95%;
+        margin:auto;
+
+    }
+
+    .products-grid{
+
+        grid-template-columns:repeat(4,1fr);
+
+    }
+
+}
+
+
+
+/* ===========================
+   Small Laptop (1200px)
+=========================== */
+
+@media (max-width:1200px){
+
+    .products-layout{
+
+        gap:20px;
+
+    }
+
+    .filters-sidebar{
+
+        width:270px;
+
+    }
+
+    .products-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+
+
+/* ===========================
+   Tablet Landscape (992px)
+=========================== */
+
+@media (max-width:992px){
+
+    .top-right{
+
+        display:none;
+
+    }
+
+    .search-box{
+
+        width:100%;
+
+    }
+
+    .products-layout{
+
+        flex-direction:column;
+
+    }
+
+    .filters-sidebar{
+
+        width:100%;
+
+        position:static;
+
+    }
+
+    .products-grid{
+
+        width:100%;
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+
+/* ===========================
+   Tablet Portrait (768px)
+=========================== */
+
+@media (max-width:768px){
+
+    .navbar-links{
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+        scrollbar-width:none;
+
+    }
+
+    .navbar-links::-webkit-scrollbar{
+
+        display:none;
+
+    }
+
+    .products-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:15px;
+
+    }
+
+    .product-image{
+
+        height:240px;
+
+    }
+
+    .products-heading h2{
+
+        font-size:38px;
+
+    }
+
+}
+
+
+
+/* ===========================
+   Mobile (576px)
+=========================== */
+
+@media (max-width:576px){
+
+    .header-container{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .search-box{
+
+        width:100%;
+
+    }
+
+    .products-heading h2{
+
+        font-size:32px;
+
+    }
+
+    .products-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .product-image{
+
+        height:260px;
+
+    }
+
+    .filters-sidebar{
+
+        width:100%;
+
+    }
+
+    .sort-dropdown{
+
+        width:100%;
+
+    }
+
+}
+
+
+
+/* ===========================
+   Small Mobile (400px)
+=========================== */
+
+@media (max-width:400px){
+
+    .products-section{
+
+        padding:0 10px;
+
+    }
+
+    .products-heading h2{
+
+        font-size:28px;
+
+    }
+
+    .product-title{
+
+        font-size:15px;
+
+    }
+
+    .current-price{
+
+        font-size:26px;
+
+    }
+
+    .old-price{
+
+        font-size:16px;
+
+    }
+
+    .discount{
+
+        font-size:16px;
+
+    }
+
+}
