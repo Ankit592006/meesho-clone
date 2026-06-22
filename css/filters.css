@@ -1,0 +1,148 @@
+/* .filters-panel{
+
+    width:300px;
+
+    flex-shrink:0;
+
+}
+
+.filter-card{
+
+    margin-top:20px;
+
+    background:#fff;
+
+    border:1px solid #e5e5e5;
+
+    border-radius:8px;
+
+    padding:20px;
+
+}
+
+.filter-card h2{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    margin-bottom:6px;
+
+}
+
+.product-count{
+
+    color:#6b6b6b;
+
+    font-size:17px;
+
+    margin-bottom:20px;
+
+} */
+ /* ===============================
+FILTER SIDEBAR
+================================ */
+
+.filters-sidebar{
+
+    width:320px;
+
+    flex-shrink:0;
+
+}
+
+/* ===============================
+FILTER CARD
+================================ */
+
+.filters-card{
+
+    margin-top:18px;
+
+    border:1px solid #e5e5e5;
+
+    border-radius:8px;
+
+    background:#fff;
+
+    overflow:hidden;
+
+}
+
+/* ===============================
+HEADER
+================================ */
+
+.filters-header{
+
+    padding:20px;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.filters-header h3{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#353543;
+
+    margin-bottom:6px;
+
+}
+
+.filters-header span{
+
+    color:#8b8ba3;
+
+    font-size:16px;
+
+}
+
+/* ===============================
+FILTER ROW
+================================ */
+
+.filter-item{
+
+    height:62px;
+
+    padding:0 20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom:1px solid #efefef;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.filter-item:hover{
+
+    background:#fafafa;
+
+}
+
+.filter-item span{
+
+    font-size:20px;
+
+    color:#353543;
+
+}
+
+.filter-item i{
+
+    font-size:18px;
+
+    color:#555;
+
+}

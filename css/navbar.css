@@ -133,3 +133,56 @@
     border-bottom: 3px solid rgb(159, 32, 137);
     cursor: pointer;
 }
+/* ===========================
+        MEGA MENU
+=========================== */
+
+#megaMenu{
+    position:absolute;
+    top:126px;                /* navbar ke niche */
+    left:50%;
+    transform:translateX(-50%);
+
+    width:88%;
+    max-width:1450px;
+
+    background:#fff;
+
+    border:1px solid #ececec;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+    display:none;
+
+    z-index:999;
+}
+
+.mega-wrapper{
+    display:flex;
+}
+
+.mega-column{
+    width:220px;
+    padding:28px;
+}
+
+.mega-column:nth-child(even){
+    background:#f7f6fb;
+}
+
+.mega-column h4{
+    color:#9f2089;
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.mega-column a{
+    display:block;
+    color:#555;
+    text-decoration:none;
+    margin-bottom:14px;
+    font-size:18px;
+}
+
+.mega-column a:hover{
+    color:#9f2089;
+}

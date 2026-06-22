@@ -1,0 +1,43 @@
+.sort-dropdown{
+
+    width:100%;
+
+    height:56px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 18px;
+
+    background:white;
+
+    cursor:pointer;
+
+}
+
+.sort-dropdown span{
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+.sort-dropdown strong{
+
+    font-size:20px;
+
+}
+
+.sort-dropdown i{
+
+    font-size:18px;
+
+}

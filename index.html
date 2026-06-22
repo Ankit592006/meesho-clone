@@ -17,7 +17,11 @@
     <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
-  
+    <link rel="stylesheet" href="css/products-grid.css">
+<link rel="stylesheet" href="css/product-card.css">
+<link rel="stylesheet" href="css/filters.css">
+<link rel="stylesheet" href="css/sort-dropdown.css">
+
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2category?family=Poppins&display=swap" rel="stylesheet">
@@ -25,7 +29,7 @@
 </head>
 
 <body>
-     <!-- ================= HEADER START ================= -->
+    <!-- ================= HEADER START ================= -->
     <div class="full-nav">
         <div class="outer">
             <div class="logo-title">
@@ -56,31 +60,54 @@
         <div class="mid-line"></div>
         <div class="box">
             <div class="nav-down">
-               <div class="nav-list"><p>Popular</p></div>
+                <div class="nav-list" id="nav-popular" data-menu="popular">
+                    <p>Popular</p>
+                </div>
 
-<div class="nav-list"><p>Kurti, Saree & Lehenga</p></div>
+                <div class="nav-list" id="nav-ethnic" data-menu="ethnic">
+                    <p>Kurti, Saree & Lehenga</p>
+                </div>
 
-<div class="nav-list"><p>Women Western</p></div>
+                <div class="nav-list" id="nav-western" data-menu="western">
+                    <p>Women Western</p>
+                </div>
 
-<div class="nav-list"><p>Lingerie</p></div>
+                <div class="nav-list" id="nav-lingerie" data-menu="lingerie">
+                    <p>Lingerie</p>
+                </div>
 
-<div class="nav-list"><p>Men</p></div>
+                <div class="nav-list" id="nav-men" data-menu="men">
+                    <p>Men</p>
+                </div>
 
-<div class="nav-list"><p>Kids & Toys</p></div>
+                <div class="nav-list" id="nav-kids" data-menu="kids">
+                    <p>Kids & Toys</p>
+                </div>
 
-<div class="nav-list"><p>Home & Kitchen</p></div>
+                <div class="nav-list" id="nav-home" data-menu="home">
+                    <p>Home & Kitchen</p>
+                </div>
 
-<div class="nav-list"><p>Beauty & Health</p></div>
+                <div class="nav-list" id="nav-beauty" data-menu="beauty">
+                    <p>Beauty & Health</p>
+                </div>
 
-<div class="nav-list"><p>Jewellery & Accessories</p></div>
+                <div class="nav-list" id="nav-jewellery" data-menu="jewellery">
+                    <p>Jewellery & Accessories</p>
+                </div>
 
-<div class="nav-list"><p>Bags</p></div>
+                <div class="nav-list" id="nav-bags" data-menu="bags">
+                    <p>Bags</p>
+                </div>
             </div>
         </div>
         <div class="mid-line"></div>
+        <!-- ================= MEGA MENU CONTAINER ================= -->
+        <div id="megaMenu"></div>
+
     </div>
-     <!-- ================= HEADER END ================= -->
-       <!-- ================= HERO START ================= -->
+    <!-- ================= HEADER END ================= -->
+    <!-- ================= HERO START ================= -->
 
     <div class="banner">
         <img src="assets/meesho background.webp" alt="" class="img-banner">
@@ -92,7 +119,7 @@
             <div class="shop-now">Shop Now</div>
         </div>
     </div>
-     <!-- ================= HERO END ================= -->
+    <!-- ================= HERO END ================= -->
 
 
     <!-- ================= POLICY START ================= -->
@@ -114,7 +141,7 @@
             </div>
         </div>
     </div>
-     <!-- ================= POLICY END ================= -->
+    <!-- ================= POLICY END ================= -->
 
 
     <!-- ================= COLLECTION START ================= -->
@@ -168,7 +195,7 @@
             </a>
         </div>
     </div>
-       <!-- ================= COLLECTION END ================= -->
+    <!-- ================= COLLECTION END ================= -->
 
 
     <!-- ================= GOLD BANNER START ================= -->
@@ -182,7 +209,7 @@
             <img src="assets/jewellery" alt="">
         </div>
     </div>
-      <!-- ================= GOLD BANNER END ================= -->
+    <!-- ================= GOLD BANNER END ================= -->
 
 
     <!-- ================= ORIGINAL BRANDS START ================= -->
@@ -228,7 +255,7 @@
             </div>
         </div>
     </div>
-      <!-- ================= ORIGINAL BRANDS END ================= -->
+    <!-- ================= ORIGINAL BRANDS END ================= -->
 
 
     <!-- ================= TRENDZ START ================= -->
@@ -255,10 +282,13 @@
         </div>
     </div>
     <!-- ================= TRENDZ END ================= -->
+<section id="productsSection"></section>
+
+
 
 
     <!-- ================= PRODUCTS START ================= -->
-    <div class="products">
+    <!-- <div class="products">
         <h4 style="font-size: 32px; ">Products For You</h4>
         <div class="product-box">
             <div class="pro-box">
@@ -277,7 +307,7 @@
             </div>
             <div class="pro-box">
                 <img src="assets/img2.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>Graceful fridge cover</p>
                     <h5>₹ 149</h5>
                     <div class="free-deliver">
@@ -291,7 +321,7 @@
             </div>
             <div class="pro-box">
                 <img src="assets/img3.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>Chitrekha Attractive Kurtis</p>
                     <h5>₹ 189</h5>
                     <div class="free-deliver">
@@ -305,7 +335,7 @@
             </div>
             <div class="pro-box">
                 <img src="assets/img4.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>Trendy Retro Mens Shirts</p>
                     <h5>₹ 150</h5>
                     <div class="free-deliver">
@@ -317,9 +347,9 @@
                     </div>
                 </div>
             </div>
-             <div class="pro-box">
+            <div class="pro-box">
                 <img src="assets/img5.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>Classic Mens Shirt</p>
                     <h5>₹ 209</h5>
                     <div class="free-deliver">
@@ -350,7 +380,7 @@
             </div>
             <div class="pro-box">
                 <img src="assets/img7.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>Attractive Party Supplies</p>
                     <h5>₹ 109</h5>
                     <div class="free-deliver">
@@ -364,7 +394,7 @@
             </div>
             <div class="pro-box">
                 <img src="assets/img8.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>Rayfiels Casual shoes</p>
                     <h5>₹ 349</h5>
                     <div class="free-deliver">
@@ -378,7 +408,7 @@
             </div>
             <div class="pro-box">
                 <img src="assets/img9.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>Partywear Mens Shirt</p>
                     <h5>₹ 345</h5>
                     <div class="free-deliver">
@@ -390,9 +420,9 @@
                     </div>
                 </div>
             </div>
-             <div class="pro-box">
+            <div class="pro-box">
                 <img src="assets/img10.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>Aishani Ensemble Sarees</p>
                     <h5>₹ 469</h5>
                     <div class="free-deliver">
@@ -406,7 +436,7 @@
             </div>
         </div>
 
-         <div class="product-box">
+        <div class="product-box">
             <div class="pro-box">
                 <img src="assets/img11.webp" alt="">
                 <div class="pro-data">
@@ -423,7 +453,7 @@
             </div>
             <div class="pro-box">
                 <img src="assets/img12.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>Stylish Mens Shirt</p>
                     <h5>₹ 149</h5>
                     <div class="free-deliver">
@@ -437,7 +467,7 @@
             </div>
             <div class="pro-box">
                 <img src="assets/img13.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>iPhone 13 Cover</p>
                     <h5>₹ 146</h5>
                     <div class="free-deliver">
@@ -451,7 +481,7 @@
             </div>
             <div class="pro-box">
                 <img src="assets/img14.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>Blutooth Speaker</p>
                     <h5>₹ 245</h5>
                     <div class="free-deliver">
@@ -463,9 +493,9 @@
                     </div>
                 </div>
             </div>
-             <div class="pro-box">
+            <div class="pro-box">
                 <img src="assets/img15.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>Aritficial Plants</p>
                     <h5>₹ 130</h5>
                     <div class="free-deliver">
@@ -496,7 +526,7 @@
             </div>
             <div class="pro-box">
                 <img src="assets/img17.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>Graceful Women Kurta</p>
                     <h5>₹ 440</h5>
                     <div class="free-deliver">
@@ -510,7 +540,7 @@
             </div>
             <div class="pro-box">
                 <img src="assets/img18.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>Classic Wallpaper</p>
                     <h5>₹ 106</h5>
                     <div class="free-deliver">
@@ -524,7 +554,7 @@
             </div>
             <div class="pro-box">
                 <img src="assets/img19.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>Feminine Chunky Jwellery</p>
                     <h5>₹ 184</h5>
                     <div class="free-deliver">
@@ -536,9 +566,9 @@
                     </div>
                 </div>
             </div>
-             <div class="pro-box">
+            <div class="pro-box">
                 <img src="assets/img20.webp" alt="">
-                 <div class="pro-data">
+                <div class="pro-data">
                     <p>AColorful Mens Clogs</p>
                     <h5>₹ 310</h5>
                     <div class="free-deliver">
@@ -551,10 +581,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-     <div class="mid-line"></div>
-        <!-- ================= PRODUCTS END ================= -->
+    <div class="mid-line"></div>
+    <!-- ================= PRODUCTS END ================= -->
 
 
     <!-- ================= FOOTER START ================= -->
@@ -563,7 +593,7 @@
             <div class="section-1">
                 <h2>Shop Non-Stop On Meesho</h2>
                 <p>Trusted by crores of Indians</p>
-                <p>Cash on delivery  |  Free Delivery</p>
+                <p>Cash on delivery | Free Delivery</p>
                 <div class="download">
                     <img src="assets/google play.webp" alt="">
                     <img src="assets/app store.webp" alt="">
@@ -575,7 +605,7 @@
                 <div class="sec"><a href="">Hall of fame</a></div>
                 <div class="sec"><a href="">Sitemap</a></div>
             </div>
-             <div class="section-3">
+            <div class="section-3">
                 <div class="sec"><a href="">Legal and Policies</a></div>
                 <div class="sec"><a href="">Meesho Tech Blog</a></div>
                 <div class="sec"><a href="">Notices and Returns</a></div>
@@ -592,13 +622,14 @@
             <div class="section-5">
                 <h6>Contact us</h6>
                 <div>
-                    Meesho Private Limited 
+                    Meesho Private Limited
                     <br>
-                    (Formerly known as Fashnear Technologies Private Limited) 
+                    (Formerly known as Fashnear Technologies Private Limited)
                     <br>
-                    CIN: U74900KA2015PTC082263 
+                    CIN: U74900KA2015PTC082263
                     <br>
-                    3rd Floor, Wing-E, Helios Business Park,Kadubeesanahalli Village, Varthur Hobli, Outer Ring Road Bellandur, Bangalore, Bangalore South, Karnataka, India, 560103 
+                    3rd Floor, Wing-E, Helios Business Park,Kadubeesanahalli Village, Varthur Hobli, Outer Ring Road
+                    Bellandur, Bangalore, Bangalore South, Karnataka, India, 560103
                     <br>
                     E-mail address:
                     <a href="mailto:query@meesho.com">query@meesho.com</a>
@@ -609,23 +640,36 @@
             </div>
         </div>
     </div>
-   <!-- ================= FOOTER END ================= -->
+    <!-- ================= FOOTER END ================= -->
 
 
-   <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-<!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Data -->
-<script src="js/data/menuData.js"></script>
 
-<!-- Components -->
-<script src="js/components/navbar.js"></script>
+    <!-- Data -->
+    <script src="js/data/menuData.js"></script>
+    <script src="js/data/filtersData.js"></script>
+    <script src="js/data/products.js"></script>
 
-<!-- Main App -->
-<script src="js/app.js"></script>
+    <!-- Components -->
+    <script src="js/components/navbar.js"></script>
+    <script src="js/components/filters/filters-panel.js"></script>
+   
+
+<script src="js/components/filters/sort-dropdown.js"></script>
+<script src="js/components/filters/category-filter.js"></script>
+ <script src="js/components/products/products-section.js"></script>
+
+<script src="js/components/products/product-card.js"></script>
+<script src="js/components/products/product-grid.js"></script>
+
+
+    <!-- Main App -->
+    <script src="js/app.js"></script>
 </body>
 
 </html>
