@@ -1,4 +1,15 @@
 
+function adjustImagePath(path) {
+    if (!path) return "";
+    if (path.startsWith("http://") || path.startsWith("https://") || path.startsWith("data:")) {
+        return path;
+    }
+    if (window.location.pathname.includes("/pages/")) {
+        return "../../" + path;
+    }
+    return path;
+}
+
 function productCard(product) {
 
     return `
@@ -7,7 +18,7 @@ function productCard(product) {
 
             <div class="product-image">
 
-                <img src="${product.image}" alt="${product.title}">
+                <img src="${adjustImagePath(product.image)}" alt="${product.title}">
 
                 <span class="product-more">+3 More</span>
 

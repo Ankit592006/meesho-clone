@@ -1,6 +1,10 @@
 /* Trendz section styles */
 
 
+.trendz {
+    position: relative;
+}
+
 .trendz img{
     width: 100%;
 }
@@ -15,7 +19,7 @@
     transition: 0.2s;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
     position: absolute;
-    bottom: -222%;
+    bottom: 8%;
     left: 4%;
     padding: 12px 40px;
 }
@@ -26,8 +30,10 @@
     display: flex;
     gap: 40px;
     position: absolute;
-    left: 38%;
-    transform: translateY(-380px);
+    right: 4%;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .trendz-collection p{
     padding: 4px 0px 6px;

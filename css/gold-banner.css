@@ -3,6 +3,10 @@
 
 
 
+.gold {
+    position: relative;
+}
+
 .gold img {
     width: 100%;
 }
@@ -15,7 +19,7 @@
     border-radius: 8px;
     font-size: 20px;
     position: absolute;
-    bottom: -85%;
+    bottom: 12%;
     left: 12%;
     cursor: pointer;
 }
@@ -25,9 +29,10 @@
     gap: 60px;
     position: absolute;
     width: 21%;
-    top: 155%;
+    top: 50%;
     transform: translateY(-50%);
-    left: 66.66%;
+    right: 6%;
+    left: auto;
 
 }
 .gold-img img{

@@ -1,116 +1,4 @@
-// const products = [
 
-//     {
-//         id: 1,
-//         image: "assets/images/products/1.webp",
-//         title: "Smartdrops Fancy Stretch Mark Cream",
-//         price: 93,
-//         oldPrice: 101,
-//         discount: 8,
-//         rating: 3.9,
-//         reviews: "55025"
-//     },
-
-//     {
-//         id: 2,
-//         image: "assets/images/products/2.webp",
-//         title: "Womanica Premium Sanitary Pads",
-//         price: 200,
-//         oldPrice: 536,
-//         discount: 63,
-//         rating: 4.1,
-//         reviews: "153462"
-//     },
-
-//     {
-//         id: 3,
-//         image: "assets/images/products/3.webp",
-//         title: "Sassy Women Printed Briefs",
-//         price: 191,
-//         oldPrice: 197,
-//         discount: 3,
-//         rating: 4.1,
-//         reviews: "35939"
-//     },
-
-//     {
-//         id: 4,
-//         image: "assets/images/products/4.webp",
-//         title: "Vitamin E Capsules",
-//         price: 102,
-//         oldPrice: 499,
-//         discount: 80,
-//         rating: 4.2,
-//         reviews: "156701"
-//     },
-
-//     {
-//         id: 5,
-//         image: "assets/images/products/5.webp",
-//         title: "Women's Stylish Handbag",
-//         price: 399,
-//         oldPrice: 799,
-//         discount: 50,
-//         rating: 4.0,
-//         reviews: "81234"
-//     },
-
-//     {
-//         id: 6,
-//         image: "assets/images/products/6.webp",
-//         title: "Men's Casual Shoes",
-//         price: 599,
-//         oldPrice: 999,
-//         discount: 40,
-//         rating: 4.3,
-//         reviews: "22311"
-//     },
-
-//     {
-//         id: 7,
-//         image: "assets/images/products/7.webp",
-//         title: "Designer Kurti",
-//         price: 349,
-//         oldPrice: 699,
-//         discount: 50,
-//         rating: 4.4,
-//         reviews: "103567"
-//     },
-
-//     {
-//         id: 8,
-//         image: "assets/images/products/8.webp",
-//         title: "Kitchen Storage Container",
-//         price: 249,
-//         oldPrice: 499,
-//         discount: 50,
-//         rating: 4.2,
-//         reviews: "75421"
-//     },
-
-//     {
-//         id: 9,
-//         image: "assets/images/products/9.webp",
-//         title: "Bluetooth Earbuds",
-//         price: 799,
-//         oldPrice: 1499,
-//         discount: 47,
-//         rating: 4.5,
-//         reviews: "118903"
-//     },
-
-//     {
-//         id: 10,
-//         image: "assets/images/products/10.webp",
-//         title: "Cotton Bedsheet",
-//         price: 499,
-//         oldPrice: 899,
-//         discount: 44,
-//         rating: 4.1,
-//         reviews: "69452"
-//     }
-
-// ];
 const products = [
 
     {
@@ -120,7 +8,11 @@ const products = [
         originalPrice: 899,
         discount: "17% off",
         rating: 4.1,
-        reviews: 139
+        reviews: 139,
+        category: "popular",
+        gender: "unisex",
+        color: "black",
+        discountVal: 17
     },
 
     {
@@ -130,7 +22,11 @@ const products = [
         originalPrice: 199,
         discount: "25% off",
         rating: 4.4,
-        reviews: 2342
+        reviews: 2342,
+        category: "home",
+        gender: "unisex",
+        color: "blue",
+        discountVal: 25
     },
 
     {
@@ -140,7 +36,11 @@ const products = [
         originalPrice: 299,
         discount: "37% off",
         rating: 4.0,
-        reviews: 82347
+        reviews: 82347,
+        category: "ethnic",
+        gender: "women",
+        color: "pink",
+        discountVal: 37
     },
 
     {
@@ -150,7 +50,11 @@ const products = [
         originalPrice: 249,
         discount: "40% off",
         rating: 4.0,
-        reviews: 32678
+        reviews: 32678,
+        category: "men",
+        gender: "men",
+        color: "blue",
+        discountVal: 40
     },
 
     {
@@ -160,7 +64,11 @@ const products = [
         originalPrice: 329,
         discount: "36% off",
         rating: 4.2,
-        reviews: 31590
+        reviews: 31590,
+        category: "men",
+        gender: "men",
+        color: "white",
+        discountVal: 36
     },
 
     {
@@ -170,7 +78,11 @@ const products = [
         originalPrice: 799,
         discount: "24% off",
         rating: 3.9,
-        reviews: 10678
+        reviews: 10678,
+        category: "ethnic",
+        gender: "women",
+        color: "red",
+        discountVal: 24
     },
 
     {
@@ -180,7 +92,11 @@ const products = [
         originalPrice: 149,
         discount: "27% off",
         rating: 4.1,
-        reviews: 548
+        reviews: 548,
+        category: "home",
+        gender: "unisex",
+        color: "green",
+        discountVal: 27
     },
 
     {
@@ -190,7 +106,11 @@ const products = [
         originalPrice: 499,
         discount: "30% off",
         rating: 4.2,
-        reviews: 13565
+        reviews: 13565,
+        category: "bags",
+        gender: "men",
+        color: "blue",
+        discountVal: 30
     },
 
     {
@@ -200,7 +120,11 @@ const products = [
         originalPrice: 499,
         discount: "31% off",
         rating: 4.0,
-        reviews: 32678
+        reviews: 32678,
+        category: "men",
+        gender: "men",
+        color: "black",
+        discountVal: 31
     },
 
     {
@@ -210,7 +134,11 @@ const products = [
         originalPrice: 699,
         discount: "33% off",
         rating: 4.0,
-        reviews: 8056
+        reviews: 8056,
+        category: "ethnic",
+        gender: "women",
+        color: "pink",
+        discountVal: 33
     },
 
     {
@@ -220,7 +148,11 @@ const products = [
         originalPrice: 299,
         discount: "30% off",
         rating: 4.0,
-        reviews: 435
+        reviews: 435,
+        category: "men",
+        gender: "men",
+        color: "blue",
+        discountVal: 30
     },
 
     {
@@ -230,7 +162,11 @@ const products = [
         originalPrice: 249,
         discount: "40% off",
         rating: 4.0,
-        reviews: 7456
+        reviews: 7456,
+        category: "men",
+        gender: "men",
+        color: "white",
+        discountVal: 40
     },
 
     {
@@ -240,7 +176,11 @@ const products = [
         originalPrice: 229,
         discount: "36% off",
         rating: 4.2,
-        reviews: 1678
+        reviews: 1678,
+        category: "popular",
+        gender: "unisex",
+        color: "pink",
+        discountVal: 36
     },
 
     {
@@ -250,7 +190,11 @@ const products = [
         originalPrice: 399,
         discount: "39% off",
         rating: 4.1,
-        reviews: 435
+        reviews: 435,
+        category: "popular",
+        gender: "unisex",
+        color: "black",
+        discountVal: 39
     },
 
     {
@@ -260,7 +204,11 @@ const products = [
         originalPrice: 199,
         discount: "35% off",
         rating: 4.2,
-        reviews: 128
+        reviews: 128,
+        category: "home",
+        gender: "unisex",
+        color: "green",
+        discountVal: 35
     },
 
     {
@@ -270,7 +218,11 @@ const products = [
         originalPrice: 699,
         discount: "33% off",
         rating: 4.4,
-        reviews: 8459
+        reviews: 8459,
+        category: "bags",
+        gender: "men",
+        color: "black",
+        discountVal: 33
     },
 
     {
@@ -280,7 +232,11 @@ const products = [
         originalPrice: 599,
         discount: "27% off",
         rating: 4.4,
-        reviews: 9348
+        reviews: 9348,
+        category: "ethnic",
+        gender: "women",
+        color: "white",
+        discountVal: 27
     },
 
     {
@@ -290,7 +246,11 @@ const products = [
         originalPrice: 169,
         discount: "37% off",
         rating: 4.1,
-        reviews: 782
+        reviews: 782,
+        category: "home",
+        gender: "unisex",
+        color: "blue",
+        discountVal: 37
     },
 
     {
@@ -300,7 +260,11 @@ const products = [
         originalPrice: 299,
         discount: "38% off",
         rating: 4.3,
-        reviews: 26783
+        reviews: 26783,
+        category: "jewellery",
+        gender: "women",
+        color: "pink",
+        discountVal: 38
     },
 
     {
@@ -310,7 +274,272 @@ const products = [
         originalPrice: 449,
         discount: "31% off",
         rating: 4.1,
-        reviews: 2649
-    }
+        reviews: 2649,
+        category: "bags",
+        gender: "men",
+        color: "green",
+        discountVal: 31
+    },
 
+    // New Products with Local Assets
+    {
+        image: "assets/img21.webp",
+        title: "Stylish Floral Western Dress",
+        price: 299,
+        originalPrice: 499,
+        discount: "40% off",
+        rating: 4.3,
+        reviews: 549,
+        category: "western",
+        gender: "women",
+        color: "blue",
+        discountVal: 40
+    },
+    {
+        image: "assets/img22.webp",
+        title: "Elegant Party Wear Gown",
+        price: 899,
+        originalPrice: 1499,
+        discount: "40% off",
+        rating: 4.5,
+        reviews: 1024,
+        category: "western",
+        gender: "women",
+        color: "pink",
+        discountVal: 40
+    },
+    {
+        image: "assets/img23.webp",
+        title: "Casual Women Denim Jacket",
+        price: 499,
+        originalPrice: 799,
+        discount: "37% off",
+        rating: 4.1,
+        reviews: 832,
+        category: "western",
+        gender: "women",
+        color: "blue",
+        discountVal: 37
+    },
+    {
+        image: "assets/img24.webp",
+        title: "Comfortable Cotton Bra & Panty Set",
+        price: 249,
+        originalPrice: 399,
+        discount: "37% off",
+        rating: 4.0,
+        reviews: 412,
+        category: "lingerie",
+        gender: "women",
+        color: "pink",
+        discountVal: 37
+    },
+    {
+        image: "assets/img25.webp",
+        title: "Premium Women Nightsuit Set",
+        price: 399,
+        originalPrice: 599,
+        discount: "33% off",
+        rating: 4.2,
+        reviews: 1248,
+        category: "lingerie",
+        gender: "women",
+        color: "blue",
+        discountVal: 33
+    },
+    {
+        image: "assets/img26.webp",
+        title: "Cute Cotton Kids Frock",
+        price: 199,
+        originalPrice: 299,
+        discount: "33% off",
+        rating: 4.2,
+        reviews: 98,
+        category: "kids",
+        gender: "kids",
+        color: "yellow",
+        discountVal: 33
+    },
+    {
+        image: "assets/img27.webp",
+        title: "Men's & Boys Cotton T-shirt",
+        price: 120,
+        originalPrice: 199,
+        discount: "39% off",
+        rating: 4.0,
+        reviews: 73,
+        category: "kids",
+        gender: "kids",
+        color: "red",
+        discountVal: 39
+    },
+    {
+        image: "assets/img28.webp",
+        title: "Educational Building Block Toy",
+        price: 299,
+        originalPrice: 499,
+        discount: "40% off",
+        rating: 4.4,
+        reviews: 241,
+        category: "kids",
+        gender: "kids",
+        color: "green",
+        discountVal: 40
+    },
+    {
+        image: "assets/img29.webp",
+        title: "Matte Finish Liquid Lipstick Set",
+        price: 189,
+        originalPrice: 299,
+        discount: "36% off",
+        rating: 4.3,
+        reviews: 9342,
+        category: "beauty",
+        gender: "women",
+        color: "red",
+        discountVal: 36
+    },
+    {
+        image: "assets/img30.webp",
+        title: "Organic Face Serum Duo",
+        price: 299,
+        originalPrice: 449,
+        discount: "33% off",
+        rating: 4.1,
+        reviews: 1402,
+        category: "beauty",
+        gender: "unisex",
+        color: "white",
+        discountVal: 33
+    },
+    {
+        image: "assets/img31.webp",
+        title: "Hydrating Aloe Vera Skin Gel",
+        price: 99,
+        originalPrice: 149,
+        discount: "33% off",
+        rating: 4.2,
+        reviews: 823,
+        category: "beauty",
+        gender: "unisex",
+        color: "green",
+        discountVal: 33
+    },
+    {
+        image: "assets/img32.webp",
+        title: "Silver Plated Traditional Choker Set",
+        price: 249,
+        originalPrice: 399,
+        discount: "37% off",
+        rating: 4.2,
+        reviews: 4923,
+        category: "jewellery",
+        gender: "women",
+        color: "white",
+        discountVal: 37
+    },
+    {
+        image: "assets/img33.webp",
+        title: "Gold Plated Temple Jewellery Set",
+        price: 499,
+        originalPrice: 799,
+        discount: "37% off",
+        rating: 4.3,
+        reviews: 1045,
+        category: "jewellery",
+        gender: "women",
+        color: "yellow",
+        discountVal: 37
+    },
+    {
+        image: "assets/img34.webp",
+        title: "Stylish Couple Rings Set",
+        price: 149,
+        originalPrice: 249,
+        discount: "40% off",
+        rating: 4.0,
+        reviews: 322,
+        category: "jewellery",
+        gender: "unisex",
+        color: "white",
+        discountVal: 40
+    },
+    {
+        image: "assets/img35.webp",
+        title: "Trendy Women Handbag Set",
+        price: 399,
+        originalPrice: 599,
+        discount: "33% off",
+        rating: 4.2,
+        reviews: 8402,
+        category: "bags",
+        gender: "women",
+        color: "pink",
+        discountVal: 33
+    },
+    {
+        image: "assets/img36.webp",
+        title: "Leather Men's Formal Wallet",
+        price: 180,
+        originalPrice: 299,
+        discount: "39% off",
+        rating: 4.1,
+        reviews: 2013,
+        category: "bags",
+        gender: "men",
+        color: "black",
+        discountVal: 39
+    },
+    {
+        image: "assets/img37.webp",
+        title: "Waterproof Casual Backpack",
+        price: 299,
+        originalPrice: 499,
+        discount: "40% off",
+        rating: 4.3,
+        reviews: 418,
+        category: "bags",
+        gender: "unisex",
+        color: "black",
+        discountVal: 40
+    },
+    {
+        image: "assets/img38.webp",
+        title: "Designer Non-Stick Cookware Set",
+        price: 799,
+        originalPrice: 1299,
+        discount: "38% off",
+        rating: 4.4,
+        reviews: 1042,
+        category: "home",
+        gender: "unisex",
+        color: "black",
+        discountVal: 38
+    },
+    {
+        image: "assets/img39.webp",
+        title: "Elegant Microfiber Bed Sheets",
+        price: 349,
+        originalPrice: 499,
+        discount: "30% off",
+        rating: 4.1,
+        reviews: 2390,
+        category: "home",
+        gender: "unisex",
+        color: "pink",
+        discountVal: 30
+    },
+    {
+        image: "assets/img40.webp",
+        title: "Men's Casual Cotton Joggers",
+        price: 349,
+        originalPrice: 499,
+        discount: "30% off",
+        rating: 4.0,
+        reviews: 1403,
+        category: "men",
+        gender: "men",
+        color: "blue",
+        discountVal: 30
+    }
 ];

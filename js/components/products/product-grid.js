@@ -1,4 +1,4 @@
-function productGrid() {
+function productGrid(productsList = products) {
 
     let html = `
 
@@ -6,7 +6,7 @@ function productGrid() {
 
     `;
 
-    products.forEach(function(product){
+    productsList.forEach(function(product){
 
         html += productCard(product);
 
